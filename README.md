@@ -31,6 +31,7 @@ This project demonstrates **Object-Oriented Programming (OOP)** concepts such as
 
 ## 📂 Project Structure
 LearningOOP.MovieTickets/
+
 │
 ├── Cinema.java # Manages users, movies, and tickets
 
