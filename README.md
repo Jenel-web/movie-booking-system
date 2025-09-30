@@ -30,3 +30,16 @@ This project demonstrates **Object-Oriented Programming (OOP)** concepts such as
 ---
 
 ## 📂 Project Structure
+LearningOOP.MovieTickets/
+│
+├── Cinema.java # Manages users, movies, and tickets
+├── Movie.java # Represents a movie with seat availability
+├── Ticket.java # Represents a ticket with unique ID
+├── User.java # Represents a user with name and username
+└── Main.java # Entry point with menu-driven booking system
+
+
+## Future Improvements 
+ - Make it menu-based for better UX
+ - Add Database (Will learn SQL in the Future)
+ - Add UI (Might be JAVA GUI or using frontend languages like HTML, CSS, and JS)
