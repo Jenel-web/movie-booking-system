@@ -33,9 +33,13 @@ This project demonstrates **Object-Oriented Programming (OOP)** concepts such as
 LearningOOP.MovieTickets/
 │
 ├── Cinema.java # Manages users, movies, and tickets
+
 ├── Movie.java # Represents a movie with seat availability
+
 ├── Ticket.java # Represents a ticket with unique ID
+
 ├── User.java # Represents a user with name and username
+
 └── Main.java # Entry point with menu-driven booking system
 
 
