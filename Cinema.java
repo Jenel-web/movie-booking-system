@@ -20,6 +20,7 @@ public class Cinema {
         {
                 return users;
         }
+        
         public int findUser(String name)
         {       
             int index = 0;
@@ -63,7 +64,7 @@ public class Cinema {
                                 return true;
                         }
                         else{
-                                System.out.println("There are no VIP seats left.");
+                                System.out.println("There are no VIP seats left. Please consider booking a regular ticket.");
                         }
                 }
                 else if(category.equalsIgnoreCase("Regular"))
@@ -84,8 +85,21 @@ public class Cinema {
         {
                 return (choice == 'y'? "VIP" : "Regular" );
         }
+
         void showUserBookings()
         {
+
+        }
+
+        public void displayMenu()
+        {
+                System.out.println("MENU");
+                System.out.println("1. Register User");
+                System.out.println("2. Book a Ticket");
+                System.out.println("3. Show User Bookings");
+                System.out.println("4. Show Tickets per Movie");
+                System.out.println("5. Cancel Ticket");
+                System.out.println("6. Exit the program");
 
         }
         
