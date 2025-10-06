@@ -52,7 +52,7 @@ public class Movie
 
    public String toString()
    {
-        return "Title : " + title + " || Location : " + theater;
+        return "Title : " + title + " || Location : " + theater + " || VIP Seats Available : " + availableVipSeats + " || Regular Seats Available : " + availableRegularSeats;
    }
 
 }   
