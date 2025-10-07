@@ -50,6 +50,16 @@ public class Movie
         }
    }
 
+   public void increaseRegularTicket()
+    {
+        availableRegularSeats++;
+    }
+
+    public void increaseVIPTicket()
+    {
+        availableVipSeats++;
+    }
+
    public String toString()
    {
         return "Title : " + title + " || Location : " + theater + " || VIP Seats Available : " + availableVipSeats + " || Regular Seats Available : " + availableRegularSeats;

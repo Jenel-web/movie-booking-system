@@ -34,6 +34,6 @@ public class Ticket {
 
     public String toString()
     {   
-        return "Name : " + user.getName() + "|| Movie : " + movie.getTitle() + " || Seat : " + seatCategory.toUpperCase() + " || Ticket ID : " + TicketID;
+        return "Name : " + user.getName() + " || Movie : " + movie.getTitle() + " || Seat : " + seatCategory.toUpperCase() + " || Ticket ID : " + TicketID;
     }
 }
