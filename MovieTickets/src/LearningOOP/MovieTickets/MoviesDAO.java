@@ -51,23 +51,49 @@ public class MoviesDAO {
         }    
     }
     
-    public void addUser(User user)
+    public void removeMovie(int movie_id)
     {
-        String sql = "INSERT INTO users (user_name, username) VALUES(?, ?)";
+        String sql = "DELETE FROM movie WHERE movie_id = ?";
 
-        try( PreparedStatement stmt = conn.prepareStatement(sql))
+        try(PreparedStatement stmt = conn.prepareStatement(sql))
         {
-            stmt.setString(1, user.getName());
-            stmt.setString(2, user.getUserName());
-            stmt.executeUpdate();
-            System.out.println("User added successfully!");
+            stmt.setInt(1, movie_id);
+            int deleted = stmt.executeUpdate();
+
+            if(deleted > 0)
+            {
+                System.out.println("Movie Deleted Successfully");   
+            }
+            else{
+                System.out.println("Movie index not found!");
+            }
         }catch(SQLException e)
         {
             System.out.println(e.getMessage());
-        }    
+        }
     }
-   
+    
+    public void addMovie(Movie movie)
+    {
+        String sql = """
+                     INSERT INTO movie (title, theater) 
+                     VALUES (?,?)
+                     """;
+
+        try(PreparedStatement stmt = conn.prepareStatement(sql))
+        {
+            stmt.setString(1, movie.getTitle());
+            stmt.setString(2, movie.getTheater());
+            stmt.executeUpdate();
+
+            System.out.println("Movie added successfully!");
+        }catch(SQLException e)
+        {
+            System.out.println(e.getMessage());
+        }
     }
+
+}
 
 
 

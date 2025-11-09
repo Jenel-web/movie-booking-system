@@ -26,40 +26,7 @@ public class Movie
         return title;
     }
 
-   public int getAvailableRegularSeats() {
-       return availableRegularSeats;
-   }
-
-   public int getAvailableVipSeats() {
-       return availableVipSeats;
-   }
-
-   public void bookVIPSeats()
-   {
-        if(getAvailableVipSeats() > 0)
-        {
-            availableVipSeats--;
-        }
-   }
-
-   public void bookRegularSeats()
-   {
-        if(getAvailableRegularSeats() > 0)
-        {
-            availableRegularSeats--;
-        }
-   }
-
-   public void increaseRegularTicket()
-    {
-        availableRegularSeats++;
-    }
-
-    public void increaseVIPTicket()
-    {
-        availableVipSeats++;
-    }
-
+  
    public String toString()
    {
         return "Title : " + title + " || Location : " + theater + " || VIP Seats Available : " + availableVipSeats + " || Regular Seats Available : " + availableRegularSeats;
